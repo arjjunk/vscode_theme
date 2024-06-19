@@ -1,18 +1,75 @@
 {
 	"name": "test",
 	"colors": {
-		"editor.background": "#010101",
+		"editor.background": "#000",
 		"editor.foreground": "#efefef",
-		"activityBarBadge.background": "#ff0202",
-		"sideBarTitle.foreground": "#ff0202",
-		"sideBar.background": "#010101",
-		"sideBar.foreground": "#dddddd",
-		"sideBarSectionHeader.background": "#880000",
+		"editor.selectionBackground": "#121312f6",
+		"editorBracketHighlight.foreground1": "#f700ff",
+		"editorBracketHighlight.foreground2": "#ffe600",
+		"editorBracketHighlight.foreground3": "#00ffb3",
+		"editorBracketHighlight.foreground4": "#008cff",
+		"editorBracketMatch.background": "#ecf1e96c",
+		"editorBracketHighlight.unexpectedBracket.foreground": "#ff0000",
+		"editorCursor.foreground": "#07f787",
+		"editorError.background": "#ff0000a1",
+		"editorError.foreground": "#ffffff",
+		"editorIndentGuide.activeBackground1": "#ffe60085",
+		"editorOverviewRuler.background": "#010101",
+		"editorOverviewRuler.addedForeground": "#27f50c",
+		"editorStickyScroll.background": "#000000",
+		"editorSuggestWidget.background": "#000000",
+		"editorSuggestWidget.foreground": "#ffffff",
+		"editorSuggestWidget.selectedBackground": "#03fa9b71",
+		"editorWidget.background": "#000000",
+		
+
+		"activityBarBadge.background": "#03fa9b",
+		"activityBarBadge.foreground": "#000",
+		"sideBarTitle.foreground": "#03fa9b",
+		"sideBar.background": "#000",
+		"sideBar.foreground": "#fff",
+		"sideBar.border": "#03fa9b",
+	
+		"sideBarSectionHeader.background": "#000",
+		"sideBarSectionHeader.foreground": "#03fa9b",
+		// "sideBarActivityBarTop.border": "#ff0000",
+		"sideBarStickyScroll.background": "#020202",
+		"sideBarTitle.background": "#000",
+
 		"activityBar.activeBackground": "#000000",
-		"activityBar.activeBorder": "#ff0000",
-		"activityBar.background": "#010101",
-		"activityBar.foreground": "#ff0000"
+		"activityBar.activeBorder": "#03fa9b",
+		"activityBar.background": "#000000",
+		"activityBar.foreground": "#03fa9b",
+		"activityBarTop.background": "#000",
+
+		"statusBar.background": "#000",
+		"statusBar.foreground": "#03fa9b",
+		"statusBarItem.hoverBackground": "#000000",
+
+		"panel.background": "#000",
+		"panel.border": "#03fa9b",
+		"panelTitle.activeForeground": "#03fa9b",
+		"panelTitle.inactiveForeground": "#6d6a6a",
+
+		// "icon.foreground": "#03fa9b",
+		"scrollbarSlider.background": "#03fa9b",
+
+		"tab.activeBackground": "#000",
+		"tab.inactiveBackground": "#000",
+		"tab.border": "#000",
+		"tab.activeBorderTop": "#03fa9b",
+		"tab.activeForeground": "#03fa9b",
+		"tab.inactiveForeground": "#6d6a6a",
+		"tab.hoverBackground": "#03fa9b59",
+		"tab.hoverForeground": "#000",
+
+		"gitDecoration.modifiedResourceForeground": "#6dee4dfa",
+		"gitDecoration.untrackedResourceForeground": "#882233",
+
+		
+
 	},
+
 	"tokenColors": [
 		{
 			"name": "Comment",
@@ -70,7 +127,7 @@
 			"scope": [
 				"keyword.control",
 				"constant.other.color",
-				"punctuation",
+				// "punctuation",
 				"meta.tag",
 				"punctuation.definition.tag",
 				"punctuation.separator.inheritance.php",
@@ -82,7 +139,7 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#a1bdb6"
+				"foreground": "#cbec0e"
 			}
 		},
 		{
@@ -93,7 +150,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#0679e4"
+				"foreground": "#00aeff"
 			}
 		},
 		{
@@ -141,7 +198,7 @@
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#F78C6C"
+				"foreground": "#6cf7e0"
 			}
 		},
 		{
@@ -150,13 +207,12 @@
 				"string",
 				"constant.other.symbol",
 				"constant.other.key",
-				"entity.other.inherited-class",
 				"markup.heading",
 				"markup.inserted.git_gutter",
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#C3E88D"
+				"foreground": "#89ec6a"
 			}
 		},
 		{
@@ -172,7 +228,7 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#FFCB6B"
+				"foreground": "#0becfc"
 			}
 		},
 		{
@@ -252,11 +308,28 @@
 			"name": "HTML Attributes",
 			"scope": [
 				"text.html.basic entity.other.attribute-name.html",
-				"text.html.basic entity.other.attribute-name"
+				"text.html.basic entity.other.attribute-name",
+				"punctuation.separator.key-value.html",
+				"meta.attribute.class.html",
+				"meta.tag.structure.div.start.html",
+				"text.html.derivative"
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#FFCB6B"
+				"foreground": "#f1f7f7"
+			}
+		},
+		{
+			"name" : "HTML Tags",
+			"scope" : [
+				"punctuation.definition.tag.begin.html",
+				"meta.tag.structure.div.end.html",
+				"punctuation.definition.tag.end.html",
+				"meta.tag.structure.div.end.html",
+			],
+			"settings": {
+				"foreground": "#00aeff",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -301,7 +374,7 @@
 				"markup.changed"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "#764597"
 			}
 		},
 		{
@@ -630,6 +703,103 @@
 			"settings": {
 				"foreground": "#EEFFFF"
 			}
-		}
+		},
+		{
+			"name": "Python ",
+			"scope": [
+				
+				"source.python"		
+			],
+			"settings": {
+				"foreground": "#cee3e9"
+			}
+		},
+		{
+			"name": "keywords",
+			"scope": [
+				
+				"keyword.control.import.python",
+				"keyword.control.flow.python"		
+			],
+			"settings": {
+				"foreground": "#60c3eb",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Punctuations",
+			"scope": [
+				
+				"punctuation"		
+			],
+			"settings": {
+				"foreground": "#727472",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Python Entity",
+			"scope": [
+				
+				"entity.name.function.python",
+				"entity.name"
+
+			],
+			"settings": {
+				"foreground": "#e42152",
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"name": "Python Keyword",
+			"scope": [
+				
+				// "storage.type",
+				"storage.type.function.python",
+				"storage.type.class.python"		
+			],
+			"settings": {
+				"foreground": "#09fabe",
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"name": "Python Inherited Classes",
+			"scope": [
+				
+				"entity.other.inherited-class.python"		
+			],
+			"settings": {
+				"foreground": "#0971fa",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Python Function Call",
+			"scope": [
+				
+				"meta.function-call.generic.python",
+				"meta.function-call.arguments.python",
+
+				"support.function.builtin.python"
+			],
+			"settings": {
+				"foreground": "#c4d626",
+			}
+		},
+
+		{
+			"name": "Python Operators",
+			"scope": [
+				
+				"keyword.operator.comparison.python",
+				"keyword.operator.assignment.python"		
+			],
+			"settings": {
+				"foreground": "#58ecec",
+				"fontStyle": "italic"
+			}
+		},
+
 	]
 }
